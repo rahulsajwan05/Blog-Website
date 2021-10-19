@@ -1,0 +1,23 @@
+.form{
+    margin-top: 70px;
+}
+
+.btn-primary{
+    /* margin-left: 200px; */
+    margin-top: 2%;
+}
+#heading{
+    margin-top: 20px;
+    text-align: center;
+}
+
+#footer{
+ 
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    color: white;
+    text-align: left;
+ 
+}

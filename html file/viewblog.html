@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css file/viewblog.css">
+    <link rel="stylesheet" href="../css file/register.css">
+    <title>Document</title>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+   
+</head>
+
+<!-- <body onload="init()"> -->
+<body onload="view_blogs()">
+
+    <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark">
+
+        <div class="collapse navbar-collapse" id="navbar-home">
+            <div class="navbar-nav">
+                <!-- <a class="nav-item nav-link" onclick="navbarhome()" href="#">Home </a> -->
+                <a class="nav-item nav-link"  onclick="navbaraddblog()" href="#">Add Blog</a>
+                <a class="nav-item nav-link"  onclick="navbarlogout()" href="#">Logout</a>
+            </div>
+        </div>
+    </nav>
+    <div class="class">
+    <h6 id="welcomeH" style="text-align: center;"> </h6>
+</div>
+
+    <div class="container">  
+        <div id="cardRow" class="row">
+            <!-- <class="col-md-4">
+                <div class="card" style="width: 18rem;">
+                    <img src="mountain.jpg" class="card-img-top" alt="mountain">
+                    <div class="card-body ">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card's content.</p>
+                        <p class="card-text"> rahulsajwan05@gmail.com</p>
+
+                        <button class="btn btn-primary" >Show</button>
+                        <button type="button" class="btn btn-primary" id="editbtn">Edit</button>
+                        <button type="button" class="btn btn-primary" id="deletebtn"> Delete</button>
+                    </div>
+                </div>
+            </div> -->
+        </div>
+        </div>
+     
+    <div class="modal fade" id="myModel" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true" >
+        <div class="modal-dialog modal-dialog-centered" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLongTitle">
+                Edit blog
+              </h5>
+              <button
+                type="button"
+                class="close"
+                data-dismiss="modal"
+                aria-label="Close"
+              >
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <div class="mr-auto ml-auto" id="blog-edit-form">
+                <div class="form-group">
+                  <label for="title">Title</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="title"
+                    name="title"
+                  />
+                  <p class="error-msg-title"></p>
+                </div>
+                <div class="form-group">
+                  <label for="description">Description</label>
+                  <textarea
+                    class="form-control"
+                    id="description"
+                    name="description"
+                    rows="5"
+                  ></textarea>
+                  <p class="error-msg-description"></p>
+                </div>
+                <p class="text-center form-status invalid"></p>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button onclick="update()"  type="button" class="btn btn-primary" id="save-edit-btn">
+                Update
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+        
+  
+
+    <div class="card-footer" id="footer">
+        <small class="text-muted sticky-top"> My Blog &copy; </small>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+        crossorigin="anonymous"></script>
+        <script type="text/javascript" src="../js file/viewblog.js"></script>
+</body>
+
+</html>

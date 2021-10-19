@@ -1,0 +1,22 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+.form{
+    margin-top: 0px;
+}
+
+/* .btn-primary{ */
+    /* margin-left: 200px; */
+    /* margin-top: 2%;
+} */
+#heading{
+    margin-top: 20px;
+    text-align: center;
+}
+
+#id{
+    /* overflow: hidden; */
+    margin-top: -220px;
+}

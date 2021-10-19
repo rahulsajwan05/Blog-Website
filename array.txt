@@ -1,0 +1,57 @@
+<!-- for(var arr in loginArray) {
+    for(var filter in blogdataArray)
+    {
+       if(loginArray[arr].loginEmail == blogdataArray[filter].arrayEmail)
+       {
+          // alert("Fdsfs");
+          var filterTitle=filtered.push(blogdataArray[filter].arrayTitle);
+          var filterDesc=filtered.push(blogdataArray[filter].arrayDesc);
+          var filterEmail=filtered.push(blogdataArray[filter].arrayEmail);
+
+          var title = filterTitle;
+          var descriptions = filterDesc;
+          var email = filterEmail;
+
+          prepareCard( title , descriptions , email , i);
+          //    for (var i = 0; i < blogdataArray.length; i++) {
+
+          //    var title = blogdataArray[i].arrayTitle;
+          //    var descriptions = blogdataArray[i].arrayDesc;
+          //    var email = blogdataArray[i].arrayEmail;
+  
+          //    prepareCard( title , descriptions , email , i);
+           }
+       }
+    }
+    console.log(filtered); -->
+
+
+    //////////////////////////////////////////////////
+
+      // for (var i = 0; i < blogdataArray.length; i++) {
+      //    var checkEmail = blogdataArray[i].arrayEmail;
+      // }
+
+      // if (lsEmail == checkEmail) {
+      //    for (var i = 0; i < blogdataArray.length; i++) {
+
+      //       var title = blogdataArray[i].arrayTitle;
+      //       var descriptions = blogdataArray[i].arrayDesc;
+      //       var email = blogdataArray[i].arrayEmail;
+
+      //       prepareCard(i, title, descriptions, email);
+   //  for(var arr in loginArray) {
+   //  for(var filter in blogdataArray)
+
+   //////////////////////////////////////////////////////////
+
+   
+      //  var filterTitle=filtered.push(blogdataArray[i].arrayTitle);
+      //  var filterDesc=filtered.push(blogdataArray[i].arrayDesc);
+      //  var filterEmail=filtered.push(blogdataArray[i].arrayEmail);
+
+      //  var title = filterTitle;
+      //  var descriptions = filterDesc;
+      //  var email = filterEmail;
+
+      //  prepareCard( title , descriptions , email , i);

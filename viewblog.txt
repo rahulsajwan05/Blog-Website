@@ -1,0 +1,190 @@
+blog view
+
+// var blogdataArray = [];
+// var selectedIndex = -1;
+// var filtered = [];
+
+
+// var loginArray = [];
+// loginArray = JSON.parse(localStorage.loginRecord);
+// var lsEmail = loginArray[0].loginEmail;
+
+
+// blogdataArray = JSON.parse(localStorage.blogdataRecord);
+
+// for( var j =0 ;j< blogdataArray.length;i++)
+// {
+//    blogdataArray[i].bookId='card'+j;
+// }
+// localStorage.blogdataRecord = JSON.stringify(blogdataArray);
+
+// blogdataArray = JSON.parse(localStorage.blogdataRecord);
+// for (var i = 0; i < blogdataArray.length; i++) 
+//    {
+//       if (lsEmail == blogdataArray[i].arrayEmail) {
+//          // var filterTitle=filtered.push(blogdataArray[i].arrayTitle , blogdataArray[i].arrayDesc , blogdataArray[i].arrayEmail);
+//          var filterblogdataObj = {
+//             filterarrayTitle: blogdataArray[i].arrayTitle,
+//             filterarrayDesc: blogdataArray[i].arrayDesc,
+//             filterarrayEmail: blogdataArray[i].arrayEmail
+//          };
+
+//          filtered.push(filterblogdataObj);
+//          localStorage.filterblogdataRecord = JSON.stringify(filtered);
+//       }
+//    }
+
+// function init() {
+//    document.getElementById("welcomeH").innerHTML = "welcome" + " " + lsEmail;
+   
+//    if (localStorage.blogdataRecord) {
+//       blogdataArray = JSON.parse(localStorage.blogdataRecord);
+//    }
+
+//       for (var i = 0; i < filtered.length; i++) {   
+//          var title = filtered[i].filterarrayTitle;
+//          var descriptions = filtered[i].filterarrayDesc;
+//          prepareCard(i ,title, descriptions );  
+//       }
+//    }
+
+// function prepareCard(index, title, descriptions, email) {
+
+//    var outer = document.getElementById('cardRow');
+
+//    var col = document.createElement('div');
+//    col.id = index;
+//    col.className = "col-md-4";
+
+//    var card = document.createElement('div');
+//    card.id = "blogcard";
+//    card.className = "card";
+
+//    var image = document.createElement('img');
+//    image.src = "mountain.jpg"
+//    image.className = "card-img-top";
+
+//    var cardBody = document.createElement('div');
+//    cardBody.id = "cardbody";
+//    cardBody.className = "card-body";
+
+//    var blogTitle = document.createElement('h3');
+//    blogTitle.id = "inputTitle";
+//    blogTitle.className = "card-title";
+
+//    var blogDesc = document.createElement('p');
+//    blogDesc.id = "inputDesc";
+//    blogDesc.className = "card-text";
+
+//    var blogEmail = document.createElement('p');
+//    blogEmail.id = "inputEmail";
+//    blogEmail.className = "card-text";
+
+//    var editButton = document.createElement('button');
+//    editButton.setAttribute('data-toggle', 'modal');
+//    editButton.setAttribute('data-target', `#myModel`);
+//    editButton.id = "editbtn";
+//    editButton.className = "name";
+//    editButton.className = " btn btn-primary"
+
+//    var deleteButton = document.createElement('button');
+//    deleteButton.id = "deletebtn";
+//    deleteButton.className = "name";
+//    deleteButton.className = " btn btn-primary"
+
+
+//    blogTitle.textContent = title;
+//    blogDesc.textContent = descriptions;
+//    blogEmail.textContent = email;
+//    editButton.textContent = 'Edit';
+//    deleteButton.textContent = 'Delete';
+//    image.innerHTML = 'image';
+
+
+//    cardBody.appendChild(blogTitle);
+//    cardBody.appendChild(blogDesc);
+//    cardBody.appendChild(editButton);
+//    cardBody.appendChild(deleteButton);
+//    card.appendChild(image);
+
+//     editButton.onclick = () => editblog(index);
+//    deleteButton.onclick = () => deleteblog(index);
+
+//    col.appendChild(card);
+//    col.appendChild(cardBody);
+
+//    col.classList.add('col-md-4');
+//    image.classList.add('card-img-top');
+//    card.classList.add('card');
+//    cardBody.classList.add('card-body');
+//    editButton.classList.add('name');
+//    deleteButton.classList.add('name');
+
+//    // var saveChanges =document.getElementById("save-edit-btn");
+ 
+
+//    outer.appendChild(col);
+// }
+
+
+// function viewblog() {
+//    event.preventDefault();
+//    init();
+// }
+
+// function deleteblog(index) {
+// event.preventDefault();
+//    alert(index);
+//    var cardDelete = document.getElementById(index);
+//    cardDelete.remove();
+
+//    filtered.splice(index, 1);
+//    localStorage.filterblogdataRecord = JSON.stringify(filtered)
+
+//    // blogdataArray.splice(index, 1);
+//    // localStorage.blogdataRecord = JSON.stringify(blogdataArray);
+   
+//    location.href="./viewblog.html";
+// }
+
+
+// function editblog(index) {
+//    var blogObj = filtered[index];
+//    selectedIndex=index
+
+//    document.getElementById("title").value = blogObj.filterarrayTitle;
+//    document.getElementById("description").value = blogObj.filterarrayDesc;
+
+//    // document.getElementById("email").value = loginArray[0].loginEmail;
+// }
+
+// function update() {
+//    // alert(index);
+//     event.preventDefault();
+
+//    var blogTitle = document.getElementById('title').value;
+//    var blogDescription = document.getElementById('description').value;
+
+//    var filterdataObj = { filterarrayTitle : blogTitle , filterarrayDesc : blogDescription , filterarrayEmail : lsEmail}
+//    filtered.splice(selectedIndex ,1 , filterdataObj)
+//    localStorage.filterblogdataRecord = JSON.stringify(filtered);
+ 
+//       //  var blogdataObj = { arrayTitle: blogTitle, arrayDesc: blogDescription, arrayEmail: lsEmail };
+//       //  blogdataArray.push(blogdataObj);
+//       //  blogdataArray.splice(selectedIndex ,1 , blogdataObj);
+//       //  localStorage.blogdataRecord = JSON.stringify(blogdataArray);
+//           location.href="./viewblog.html"
+// }
+
+// function navbarlogout() {
+//    localStorage.removeItem("loginRecord");
+//    localStorage.removeItem("filterblogdataRecord");
+//    location.href = "./home.html";
+// }
+
+// function navbaraddblog() {
+//    location.href = "./addblog.html";
+// }
+// function navbarhome() {
+//    location.href = "./index.html";
+// }
